@@ -1,20 +1,14 @@
 pragma solidity 0.8.4;
 
+import "./base.sol";
 
-contract Add {
 
-    uint x;
+contract Add is Base{
 
-    event reportRun(uint result);
 
-    /**
-    * The contract constructor
-    */
-    constructor(uint x_) {
-        x = x_;
-    }
+    constructor(uint x_) Base(x_) { }
 
-    function run(uint y) public view returns (uint) {
+    function run(uint y) public view override returns (uint) {
         return x + y;
     }
 }
