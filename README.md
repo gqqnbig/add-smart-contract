@@ -42,6 +42,6 @@ The two contracts inherit from contract `Base`, which proves Solidity supports i
 
 Constract instances can be passed around, as Multiply.run() shows, although we actually pass in the address of the contract instance. 
 
-Each contract can be instancitated multiple times and each instance is stored in a block. Solidity has an operation `selfdestruct` which might be seen as deconstructor. However, `selfdestruct` only removes the storage and the balance of the contract instance, it does not alter a history block. If someone sends Ether to removed contracts, the Ether is forever lost.
+Each contract can be instancitated multiple times and each instance is stored in a block. Solidity has an operation [`selfdestruct`](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#deactivate-and-self-destruct) which might be seen as deconstructor. However, `selfdestruct` only removes the storage and the balance of the contract instance, it does not alter a history block. If someone sends Ether to removed contracts, the Ether is forever lost.
 
 Solidity does not support generic. (https://github.com/ethereum/solidity/issues/869)
