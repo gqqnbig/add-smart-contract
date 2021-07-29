@@ -1,5 +1,11 @@
 # Demonstration of language features of Solidity
 
+Clone this repo. Run [Ganache](https://www.trufflesuite.com/ganache) and add this repo to a workspace.
+
+![](https://user-images.githubusercontent.com/614159/127429738-296640b4-c9e9-4406-adf5-45a2f7096953.png)
+
+If on Windows, open Powershell and test the following commands.
+
 ```bash
 > truffle console --network development
 # instantiate an instance of contract Add
