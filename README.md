@@ -7,6 +7,8 @@ Clone this repo. Run [Ganache](https://www.trufflesuite.com/ganache) and add thi
 If on Windows, open Powershell and test the following commands.
 
 ```bash
+# Build json files from solidity smart contract files.
+> truffle build
 > truffle console --network development
 # instantiate an instance of contract Add
 # you can run this multiple times.
